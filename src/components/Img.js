@@ -61,13 +61,11 @@ const Img = () => {
           <div>
             {response.map((element) => {
               return (
-                <section key={element.url}>
-                  {/* <a href={element.url}>{element.title}</a> */}
-                  <a href={element.url}>
-                    <img alt="" src={element.url} />
+                <section key={element.webpageUrl}>
+                  <a href={element.webpageUrl}>
+                      <img alt="No-Img-Found" src={element.url}/>
                   </a>
-                  {/* <span>{element.url}</span> */}
-                  {/* <img alt="" src={element.url} /> */}
+                  <a href={element.webpageUrl}>{element.title}</a>
                 </section>
               );
             })}

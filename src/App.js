@@ -7,7 +7,7 @@ import Img from "./components/Img";
 
 function App() {
   return (
-    <div>
+    <div class="d-flex flex-column justify-content-center align-items-center mt-4">
       <Nav />
       <h1 className="badge bg-primary text-wrap" style={{width: "10rem"}}>Welcome to EVE</h1>
       <Routes>
