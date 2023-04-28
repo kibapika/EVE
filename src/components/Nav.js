@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav class="navbar bg-body-tertiary fixed-top">
+    <nav class="navbar fixed-top" style={{background: "#4A5759"}}>
       <div class="container-fluid">
         <Link className="navbar-brand" to="/web">
-            EVE
+            
         </Link>
         <button
           className="navbar-toggler"
@@ -26,7 +26,7 @@ const Nav = () => {
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              Menu
+              EVE
             </h5>
             <button
               type="button"

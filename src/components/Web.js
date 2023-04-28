@@ -22,7 +22,7 @@ const Web = () => {
             pageNumber: "1",
             pageSize: "10",
             autoCorrect: "true",
-          }
+          },
         }
       );
       setResponse(res.data.value);
@@ -46,8 +46,8 @@ const Web = () => {
 
   return (
     <div>
-      <h1>Web Search</h1>
-      <div>
+      <div className="d-flex flex-row justify-content-evenly align-items-center" style={{width: "25rem"}}>
+        <h1 className="fs-3">Web Search</h1>
         <input
           value={desc}
           onChange={(event) => setDesc(event.target.value)}
