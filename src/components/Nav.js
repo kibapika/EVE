@@ -3,11 +3,9 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav class="navbar fixed-top" style={{background: "#4A5759"}}>
+    <nav class="navbar fixed-top" style={{ background: "#505168" }}>
       <div class="container-fluid">
-        <Link className="navbar-brand" to="/web">
-            
-        </Link>
+        <Link className="navbar-brand" to="/web"></Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,9 +21,13 @@ const Nav = () => {
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
+          style={{ background: "#B3C0A4" }}
         >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          <div
+            class="offcanvas-header"
+            style={{ color: "#27233A", letterSpacing: "2px" }}
+          >
+            <h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel">
               EVE
             </h5>
             <button
@@ -36,7 +38,10 @@ const Nav = () => {
             ></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-4"
+              style={{ color: "#27233A", letterSpacing: "1px" }}
+            >
               <li class="nav-item">
                 <Link className="nav-link" aria-current="page" to="/web">
                   Web Search

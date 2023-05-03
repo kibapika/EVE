@@ -7,9 +7,9 @@ import Img from "./components/Img";
 
 function App() {
   return (
-    <div class="main d-flex flex-column justify-content-center align-items-center">
+    <div class="main">
       <Nav />
-      <h1 className="text-center" style={{width: "20rem", color: "#DEDBD2"}}>Welcome to EVE</h1>
+      <h1 className="text-center fw-bold display-2" style={{width: "30rem", color: "#EAEFD3", letterSpacing: "6px"}}>Welcome to EVE</h1>
       <Routes>
         <Route path="/*" element={<Web />} />
         <Route path="/web" element={<Web />} />

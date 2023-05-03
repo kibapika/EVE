@@ -45,20 +45,21 @@ const Web = () => {
   };
 
   return (
-    <div>
-      <div className="d-flex flex-row justify-content-evenly align-items-center" style={{width: "25rem"}}>
-        <h1 className="fs-3">Web Search</h1>
+    <div className="d-flex flex-column justify-content-evenly align-items-center">
+      <div className="d-flex flex-row justify-content-evenly align-items-center my-3" style={{width: "25rem", color: "#EAEFD3"}}>
+        <h1 className="fs-3" style={{letterSpacing: "2px"}}>Web Search</h1>
         <input
           value={desc}
           onChange={(event) => setDesc(event.target.value)}
           onKeyPress={search}
           type="text"
           required
+          style={{width: "11rem"}}
         />
       </div>
-      <section>
+      <section style={{color: "#EAEFD3", letterSpacing:"2px"}}>
         {response != null ? (
-          <div>
+          <div className="d-flex flex-column justify-content-evenly align-items-center">
             {response.map((element) => {
               return (
                 <section key={element.id}>
