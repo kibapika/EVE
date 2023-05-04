@@ -1,0 +1,19 @@
+.homeLinks {
+    text-decoration: none;
+    color: #505168;
+}
+
+.homeLinks:hover {
+    text-decoration: underline;
+    color: #B3C0A4;
+}
+
+.links {
+    text-decoration: none;
+    color: #EAEFD3;
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: #B3C0A4;
+}

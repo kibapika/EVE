@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <nav class="navbar fixed-top" style={{ background: "#505168" }}>
       <div class="container-fluid">
-        <Link className="navbar-brand" to="/web"></Link>
+        <Link className="navbar-brand fs-3" to="/*">EVE</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,9 +27,9 @@ const Nav = () => {
             class="offcanvas-header"
             style={{ color: "#27233A", letterSpacing: "2px" }}
           >
-            <h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel">
+            <Link to="/*" style={{textDecoration:"none", color: "#27233A"}}><h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel">
               EVE
-            </h5>
+            </h5></Link>
             <button
               type="button"
               class="btn-close"
