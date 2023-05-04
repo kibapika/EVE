@@ -9,9 +9,9 @@ const Home = () => {
       <h1
         className="text-center fw-bold display-2"
         style={{
-          width: "30rem",
+          width: "35rem",
           color: "#EAEFD3",
-          letterSpacing: "6px",
+          letterSpacing: "3px",
           marginTop: "5rem",
         }}
       >

@@ -70,7 +70,7 @@ const Web = () => {
             className="d-flex flex-column justify-content-evenly align-items-center"
             style={{ width: "25rem", color: "#EAEFD3"}}
           >
-            <h1 style={{ letterSpacing: "2px", fontSize: "3.5rem" }}>
+            <h1 style={{ letterSpacing: "2px", fontSize: "3.5rem", marginBottom:"13px" }}>
               Web Search
             </h1>
             <input
@@ -79,7 +79,7 @@ const Web = () => {
               onKeyPress={search}
               type="text"
               required
-              style={{ width: "13rem", height: "2.5rem", padding:"8px", letterSpacing:"0.75px" }}
+              style={{ width: "14rem", height: "2.5rem", padding:"8px", letterSpacing:"0.75px", borderRadius:"13px" }}
             />
           </div>
         )}
@@ -96,7 +96,7 @@ const Web = () => {
                   key={element.id}
                   className="d-flex flex-column justify-content-evenly my-4"
                 >
-                  <a href={element.url} className="links fs-4">
+                  <a href={element.url} className="links fs-3">
                     {element.title}
                   </a>
                   <span style={{ color: "#DCC48E", fontSize: "14.5px" }}>

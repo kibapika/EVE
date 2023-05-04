@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav class="navbar fixed-top" style={{ background: "#505168" }}>
-      <div class="container-fluid">
+    <nav className="navbar fixed-top" style={{ background: "#505168" }}>
+      <div className="container-fluid">
         <Link className="navbar-brand fs-3" to="/*">EVE</Link>
         <button
           className="navbar-toggler"
@@ -14,45 +14,45 @@ const Nav = () => {
           aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
+          className="offcanvas offcanvas-end"
+          tabIndex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
           style={{ background: "#B3C0A4" }}
         >
           <div
-            class="offcanvas-header"
+            className="offcanvas-header"
             style={{ color: "#27233A", letterSpacing: "2px" }}
           >
-            <Link to="/*" style={{textDecoration:"none", color: "#27233A"}}><h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel">
+            <Link to="/*" style={{textDecoration:"none", color: "#27233A"}}><h5 className="offcanvas-title fs-2" id="offcanvasNavbarLabel">
               EVE
             </h5></Link>
             <button
               type="button"
-              class="btn-close"
+              className="btn-close"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body">
+          <div className="offcanvas-body">
             <ul
-              class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-4"
+              className="navbar-nav justify-content-end flex-grow-1 pe-3 fs-4"
               style={{ color: "#27233A", letterSpacing: "1px" }}
             >
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/web">
                   Web Search
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link" to="/news">
                   News
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link" to="/images">
                   Images
                 </Link>

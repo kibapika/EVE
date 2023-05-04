@@ -8,7 +8,7 @@ import Img from "./components/Img";
 
 function App() {
   return (
-    <div class="main">
+    <div className="main">
       <Nav />
       <Routes>
         <Route path="/*" element={<Home />} />
