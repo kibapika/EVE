@@ -103,7 +103,7 @@ const Web = () => {
                     {element.url}
                   </span>
                   <p style={{ fontSize: "14.5px" }}>{element.description}</p>
-                  <img alt="" src={element.image.url} />
+                  <img alt="" class="webImg rounded" src={element.image.url} />
                 </section>
               );
             })}
