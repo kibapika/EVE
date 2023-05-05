@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav className="navbar fixed-top" style={{ background: "#505168" }}>
+    <nav className="navbar fixed-top" style={{ backgroundColor: "#505168" }}>
       <div className="container-fluid">
         <Link className="navbar-brand fs-3" to="/*">EVE</Link>
         <button

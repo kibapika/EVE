@@ -99,7 +99,7 @@ const Web = () => {
                   <a href={element.url} className="links fs-3">
                     {element.title}
                   </a>
-                  <span style={{ color: "#DCC48E", fontSize: "14.5px" }}>
+                  <span style={{ color: "#DCC48E", fontSize: "12px" }}>
                     {element.url}
                   </span>
                   <p style={{ fontSize: "14.5px" }}>{element.description}</p>
