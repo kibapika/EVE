@@ -101,7 +101,7 @@ const News = () => {
       <section style={{ color: "#EAEFD3", letterSpacing: "2px" }}>
         {response != null ? (
           <div
-            className="d-flex flex-column justify-content-evenl"
+            className="d-flex flex-column justify-content-evenly"
             style={{ width: "90vw" }}
           >
             {response.map((element) => {
