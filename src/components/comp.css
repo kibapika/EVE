@@ -19,6 +19,14 @@
 }
 
 .webImg {
-    width: 25%;
+    width: 50%;
     height: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(2, 5fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }

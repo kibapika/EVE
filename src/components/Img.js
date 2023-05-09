@@ -21,7 +21,7 @@ const Img = () => {
           params: {
             q: desc,
             pageNumber: "1",
-            pageSize: "10",
+            pageSize: "20",
             autoCorrect: "true",
           },
         }
@@ -99,19 +99,19 @@ const Img = () => {
       <section style={{ color: "#EAEFD3", letterSpacing: "2px" }}>
         {response != null ? (
           <div
-            className="d-flex flex-column justify-content-evenly"
+            className="grid-container"
             style={{ width: "90vw" }}
           >
             {response.map((element) => {
               return (
                 <section
                   key={element.webpageUrl}
-                  className="d-flex flex-column justify-content-evenly align-items-center my-4"
+                  className="d-flex flex-column justify-content-evenly my-4 text-center"
                 >
                   <a href={element.webpageUrl}>
                     <img
                       alt="No-Img-Found"
-                      class="webImg rounded"
+                      className="webImg rounded"
                       src={element.url}
                     />
                   </a>
