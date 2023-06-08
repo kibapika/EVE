@@ -46,7 +46,7 @@ const Web = () => {
   };
 
   return (
-    <div className="d-flex flex-column justify-content-evenly align-items-center">
+    <div className="webPage d-flex flex-column justify-content-evenly align-items-center">
       <section>
         {response != null ? (
           <div
@@ -68,9 +68,15 @@ const Web = () => {
         ) : (
           <div
             className="d-flex flex-column justify-content-evenly align-items-center"
-            style={{ width: "25rem", color: "#EAEFD3"}}
+            style={{ width: "25rem", color: "#EAEFD3" }}
           >
-            <h1 style={{ letterSpacing: "2px", fontSize: "3.5rem", marginBottom:"13px" }}>
+            <h1
+              style={{
+                letterSpacing: "2px",
+                fontSize: "3.5rem",
+                marginBottom: "13px",
+              }}
+            >
               Web Search
             </h1>
             <input
@@ -79,7 +85,13 @@ const Web = () => {
               onKeyPress={search}
               type="text"
               required
-              style={{ width: "14rem", height: "2.5rem", padding:"8px", letterSpacing:"0.75px", borderRadius:"13px" }}
+              style={{
+                width: "14rem",
+                height: "2.5rem",
+                padding: "8px",
+                letterSpacing: "0.75px",
+                borderRadius: "13px",
+              }}
             />
           </div>
         )}
@@ -88,7 +100,7 @@ const Web = () => {
         {response != null ? (
           <div
             className="d-flex flex-column justify-content-evenly"
-            style={{ width: "90vw" }}
+            style={{ width: "100vw" }}
           >
             {response.map((element) => {
               return (

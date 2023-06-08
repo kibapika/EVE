@@ -30,3 +30,13 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
+
+.webPage {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .webPage {
+        width: 100vw;
+    }
+}

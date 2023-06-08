@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav className="navbar fixed-top" style={{ backgroundColor: "#505168" }}>
+    <nav className="navbar fixed-top" style={{ backgroundColor: "#505168", height:"3.5rem", width: "100%" }}>
       <div className="container-fluid">
-        <Link className="navbar-brand fs-3" to="/*">EVE</Link>
+        <Link className="navbar-brand fs-3" to="/home">EVE</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,7 +27,7 @@ const Nav = () => {
             className="offcanvas-header"
             style={{ color: "#27233A", letterSpacing: "2px" }}
           >
-            <Link to="/*" style={{textDecoration:"none", color: "#27233A"}}><h5 className="offcanvas-title fs-2" id="offcanvasNavbarLabel">
+            <Link to="/home" style={{textDecoration:"none", color: "#27233A"}}><h5 className="offcanvas-title fs-2" id="offcanvasNavbarLabel">
               EVE
             </h5></Link>
             <button
