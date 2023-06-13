@@ -116,7 +116,7 @@ const News = () => {
                   <span style={{ color: "#505168", fontSize: "12px" }}>
                     {element.datePublished}
                   </span>
-                  <span style={{ color: "#DCC48E", fontSize: "12px" }}>
+                  <span style={{ color: "#DCC48E", fontSize: "12px", wordBreak: "break-all"}}>
                     {element.url}
                   </span>
                   <p style={{ fontSize: "14px" }}>{element.description}</p>
