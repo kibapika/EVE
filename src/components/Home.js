@@ -4,9 +4,9 @@ import "./comp.css";
 
 const Home = () => {
   return (
-    <div className="webPage d-flex flex-column justify-content-evenly align-items-center">
+    <div className="webPage d-flex flex-column justify-content-evenly align-items-center" style={{ width: "90vw" }}>
       <h1
-        className="text-center fw-bold display-2"
+        className="text-center fw-bold display-2 text-wrap"
         style={{
           width: "100%",
           color: "#EAEFD3",
@@ -17,9 +17,7 @@ const Home = () => {
         Welcome to EVE
       </h1>
       <div
-        className="d-flex flex-row justify-content-evenly align-items-center fs-3"
-        style={{ width: "50%", minWidth: "30rem" }}
-      >
+        className="frontLinks d-flex flex-row justify-content-evenly align-items-center fs-3">
         <Link to="/web" className="homeLinks">
           {" "}
           Web Search

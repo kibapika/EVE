@@ -46,12 +46,12 @@ const Web = () => {
   };
 
   return (
-    <div className="webPage d-flex flex-column justify-content-evenly align-items-center">
+    <div className="d-flex flex-column justify-content-evenly align-items-center">
       <section>
         {response != null ? (
           <div
             className="d-flex flex-row justify-content-evenly align-items-center mb-3"
-            style={{ width: "25rem", color: "#EAEFD3", marginTop: "6rem" }}
+            style={{ width: "23rem", color: "#EAEFD3", marginTop: "6rem" }}
           >
             <h1 className="fs-2" style={{ letterSpacing: "2px" }}>
               Web Search
@@ -68,7 +68,7 @@ const Web = () => {
         ) : (
           <div
             className="d-flex flex-column justify-content-evenly align-items-center"
-            style={{ width: "25rem", color: "#EAEFD3" }}
+            style={{ width: "23rem", color: "#EAEFD3" }}
           >
             <h1
               style={{

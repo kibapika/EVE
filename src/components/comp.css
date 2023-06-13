@@ -1,6 +1,7 @@
 .homeLinks {
     text-decoration: none;
     color: #505168;
+    padding-right: 25px;
 }
 
 .homeLinks:hover {
@@ -29,14 +30,4 @@
     grid-template-rows: repeat(2, 5fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-}
-
-/* .webPage {
-    width: 100%;
-} */
-
-@media (max-width: 600px) {
-    .webPage {
-        width: 100vw;
-    }
 }
