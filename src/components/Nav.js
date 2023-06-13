@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav className="navbar fixed-top" style={{ backgroundColor: "#505168", height:"3.5rem", width: "100%" }}>
+    <nav
+      className="navbar fixed-top"
+      style={{ backgroundColor: "#505168", height: "3.5rem", width: "100%" }}
+    >
       <div className="container-fluid">
-        <Link className="navbar-brand fs-3" to="/home">EVE</Link>
+        <Link className="navbar-brand fs-3" to="/home">
+          EVE
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,9 +32,14 @@ const Nav = () => {
             className="offcanvas-header"
             style={{ color: "#27233A", letterSpacing: "2px" }}
           >
-            <Link to="/home" style={{textDecoration:"none", color: "#27233A"}}><h5 className="offcanvas-title fs-2" id="offcanvasNavbarLabel">
-              EVE
-            </h5></Link>
+            <Link
+              to="/home"
+              style={{ textDecoration: "none", color: "#27233A" }}
+            >
+              <h5 className="offcanvas-title fs-2" id="offcanvasNavbarLabel">
+                EVE
+              </h5>
+            </Link>
             <button
               type="button"
               className="btn-close"
@@ -42,17 +52,32 @@ const Nav = () => {
               className="navbar-nav justify-content-end flex-grow-1 pe-3 fs-4"
               style={{ color: "#27233A", letterSpacing: "1px" }}
             >
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
                 <Link className="nav-link" aria-current="page" to="/web">
                   Web Search
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
                 <Link className="nav-link" to="/news">
                   News
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
                 <Link className="nav-link" to="/images">
                   Images
                 </Link>
