@@ -10,7 +10,7 @@ EVE
 Recreation of a search engine app built with <a href="https://github.com/facebook/create-react-app">React App</a> and <a href="https://axios-http.com/">Axios</a>.
 </p>
 
-<h3 align="center"><a href="https://temps-evali.vercel.app/">Welcome to EVE!</a></h3>
+<h3 align="center"><a href="https://eve-evali.vercel.app/">Welcome to EVE!</a></h3>
 
 ![HomePg](EVE-homepg.png)
 
