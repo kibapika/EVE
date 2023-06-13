@@ -100,7 +100,7 @@ const Web = () => {
         {response != null ? (
           <div
             className="d-flex flex-column justify-content-evenly"
-            style={{ width: "100vw" }}
+            style={{ width: "90vw" }}
           >
             {response.map((element) => {
               return (
@@ -111,7 +111,7 @@ const Web = () => {
                   <a href={element.url} className="links fs-3">
                     {element.title}
                   </a>
-                  <span style={{ color: "#DCC48E", fontSize: "12px" }}>
+                  <span style={{ color: "#DCC48E", fontSize: "12px", wordBreak: "break-all"}}>
                     {element.url}
                   </span>
                   <p style={{ fontSize: "14.5px" }}>{element.description}</p>

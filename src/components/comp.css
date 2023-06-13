@@ -31,9 +31,9 @@
     grid-row-gap: 10px;
 }
 
-.webPage {
+/* .webPage {
     width: 100%;
-}
+} */
 
 @media (max-width: 600px) {
     .webPage {
