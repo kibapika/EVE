@@ -12,7 +12,10 @@ Recreation of a search engine app built with <a href="https://github.com/faceboo
 
 <h3 align="center"><a href="https://eve-evali.vercel.app/">Welcome to EVE!</a></h3>
 
-![HomePg](EVE-homepg.png)
+<div align="center">
+<img src="Eve-homepg.png" alt="homePg">
+<img src="mobile.png" alt="homePg" width="250">
+</div>
 
 Built with ...
 
