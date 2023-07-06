@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <a
-        href="https://eve-evali.vercel.app/"
+        href="https://github.com/kibapika/eve"
         className="footerText"
       >
         Designed & Built by Eva Li - Github
