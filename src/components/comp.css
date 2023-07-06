@@ -40,3 +40,14 @@
     text-align: center;
     color: #EAEFD3;
 }
+
+.footerText {
+    text-decoration: none;
+    color: #646584;
+    letter-spacing: 3px;
+}
+
+.footerText:hover {
+    text-decoration: underline;
+    color: #B3C0A4;
+}

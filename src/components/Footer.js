@@ -4,8 +4,10 @@ import "./comp.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <a href="https://eve-evali.vercel.app/" 
-      className="text-decoration-none">
+      <a
+        href="https://eve-evali.vercel.app/"
+        className="footerText"
+      >
         Designed & Built by Eva Li - Github
       </a>
     </div>

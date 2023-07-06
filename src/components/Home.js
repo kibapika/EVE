@@ -19,7 +19,6 @@ const Home = () => {
       <div
         className="frontLinks d-flex flex-row justify-content-evenly align-items-center fs-3">
         <Link to="/web" className="homeLinks">
-          {" "}
           Web Search
         </Link>
         <Link to="/news" className="homeLinks">
