@@ -4,7 +4,7 @@ import "./comp.css";
 
 const Home = () => {
   return (
-    <div className="webPage d-flex flex-column justify-content-evenly align-items-center" style={{ width: "90vw" }}>
+    <div className="webPage d-flex flex-column justify-content-evenly align-items-center" style={{ width: "90vw", paddingTop:"32.5vh" }}>
       <h1
         className="text-center fw-bold display-2 text-wrap"
         style={{

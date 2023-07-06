@@ -10,21 +10,19 @@ const News = () => {
   const fetchNews = async () => {
     try {
       const res = await axios.get(
-        "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSearchAPI",
+        "https://bing-news-search1.p.rapidapi.com/news/search",
         {
           headers: {
+            "X-BingApis-SDK": "true",
             "X-RapidAPI-Key":
               "4c2350f8fdmsh67c94cfd9be6a99p12e932jsn8bf982d7a5dd",
-            "X-RapidAPI-Host":
-              "contextualwebsearch-websearch-v1.p.rapidapi.com",
+            "X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com",
           },
           params: {
             q: desc,
-            pageNumber: "1",
-            pageSize: "10",
-            autoCorrect: "true",
-            fromPublishedDate: "null",
-            toPublishedDate: "null",
+            freshness: "Day",
+            textFormat: "Raw",
+            safeSearch: "Moderate",
           },
         }
       );
@@ -40,6 +38,7 @@ const News = () => {
         evt.preventDefault();
         fetchNews();
         console.log("results --->", response);
+        console.log("results --->", response[1].image.thumbnail.contentUrl);
         setDesc("");
       }
     } catch (err) {
@@ -70,7 +69,7 @@ const News = () => {
         ) : (
           <div
             className="d-flex flex-column justify-content-evenly align-items-center"
-            style={{ width: "25rem", color: "#EAEFD3" }}
+            style={{ width: "25rem", color: "#EAEFD3", paddingTop: "40vh" }}
           >
             <h1
               style={{
@@ -107,21 +106,32 @@ const News = () => {
             {response.map((element) => {
               return (
                 <section
-                  key={element.id}
+                  key={element.url}
                   className="d-flex flex-column justify-content-evenly my-4"
                 >
                   <a href={element.url} className="links fs-4">
-                    {element.title}
+                    {element.name}
                   </a>
                   <span style={{ color: "#505168", fontSize: "12px" }}>
                     {element.datePublished}
                   </span>
-                  <span style={{ color: "#DCC48E", fontSize: "12px", wordBreak: "break-all"}}>
+                  <span
+                    style={{
+                      color: "#DCC48E",
+                      fontSize: "12px",
+                      wordBreak: "break-all",
+                    }}
+                  >
                     {element.url}
                   </span>
                   <p style={{ fontSize: "14px" }}>{element.description}</p>
-                  <p style={{ fontSize: "14px" }}>{element.snippet}</p>
-                  <img alt="" class="webImg rounded" src={element.image.url} />
+                  {/* {element.image.thumbnail.contentUrl !== null ? (
+                    <img
+                      alt=""
+                      className="webImg rounded"
+                      src={element.image.thumbnail.contentUrl}
+                    />
+                  ) : null} */}
                 </section>
               );
             })}

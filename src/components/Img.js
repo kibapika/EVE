@@ -10,19 +10,15 @@ const Img = () => {
   const fetchImg = async () => {
     try {
       const res = await axios.get(
-        "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/ImageSearchAPI",
+        "https://bing-image-search1.p.rapidapi.com/images/search",
         {
           headers: {
-            "X-RapidAPI-Key":
-              "4c2350f8fdmsh67c94cfd9be6a99p12e932jsn8bf982d7a5dd",
-            "X-RapidAPI-Host":
-              "contextualwebsearch-websearch-v1.p.rapidapi.com",
+            'X-RapidAPI-Key': '4c2350f8fdmsh67c94cfd9be6a99p12e932jsn8bf982d7a5dd',
+            'X-RapidAPI-Host': 'bing-image-search1.p.rapidapi.com'
           },
           params: {
             q: desc,
-            pageNumber: "1",
-            pageSize: "20",
-            autoCorrect: "true",
+            count: '20'
           },
         }
       );
@@ -68,7 +64,7 @@ const Img = () => {
         ) : (
           <div
             className="d-flex flex-column justify-content-evenly align-items-center"
-            style={{ width: "25rem", color: "#EAEFD3" }}
+            style={{ width: "25rem", color: "#EAEFD3", paddingTop:"40vh" }}
           >
             <h1
               style={{
@@ -105,22 +101,22 @@ const Img = () => {
             {response.map((element) => {
               return (
                 <section
-                  key={element.webpageUrl}
+                  key={element.webSearchUrl}
                   className="d-flex flex-column justify-content-evenly my-4 text-center"
                 >
-                  <a href={element.webpageUrl}>
+                  <a href={element.webSearchUrl}>
                     <img
                       alt="No-Img-Found"
                       className="webImg rounded"
-                      src={element.url}
+                      src={element.contentUrl}
                     />
                   </a>
                   <a
-                    href={element.webpageUrl}
+                    href={element.webSearchUrl}
                     className="links"
                     style={{ fontSize: "12px" }}
                   >
-                    {element.title}
+                    {element.name}
                   </a>
                 </section>
               );

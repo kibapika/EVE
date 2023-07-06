@@ -10,19 +10,20 @@ const Web = () => {
   const fetchWeb = async () => {
     try {
       const res = await axios.get(
-        "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI",
+        "https://bing-web-search1.p.rapidapi.com/search",
         {
           headers: {
+            "X-BingApis-SDK": "true",
             "X-RapidAPI-Key":
               "4c2350f8fdmsh67c94cfd9be6a99p12e932jsn8bf982d7a5dd",
-            "X-RapidAPI-Host":
-              "contextualwebsearch-websearch-v1.p.rapidapi.com",
+            "X-RapidAPI-Host": "bing-web-search1.p.rapidapi.com",
           },
           params: {
             q: desc,
-            pageNumber: "1",
-            pageSize: "10",
-            autoCorrect: "true",
+            mkt: "en-us",
+            safeSearch: 'Moderate',
+            textFormat: "Raw",
+            freshness: "Day",
           },
         }
       );
@@ -68,7 +69,7 @@ const Web = () => {
         ) : (
           <div
             className="d-flex flex-column justify-content-evenly align-items-center"
-            style={{ width: "23rem", color: "#EAEFD3" }}
+            style={{ width: "23rem", color: "#EAEFD3", paddingTop: "40vh" }}
           >
             <h1
               style={{
@@ -109,13 +110,22 @@ const Web = () => {
                   className="d-flex flex-column justify-content-evenly my-4"
                 >
                   <a href={element.url} className="links fs-3">
-                    {element.title}
+                    {element.name}
                   </a>
-                  <span style={{ color: "#DCC48E", fontSize: "12px", wordBreak: "break-all"}}>
+                  <span style={{ color: "#505168", fontSize: "12px" }}>
+                    {element.datePublished}
+                  </span>
+                  <span
+                    style={{
+                      color: "#DCC48E",
+                      fontSize: "12px",
+                      wordBreak: "break-all",
+                    }}
+                  >
                     {element.url}
                   </span>
                   <p style={{ fontSize: "14.5px" }}>{element.description}</p>
-                  <img alt="" class="webImg rounded" src={element.image.url} />
+                  {/* <img alt="" class="webImg rounded" src={element.image.thumbnail.contentUrl} /> */}
                 </section>
               );
             })}

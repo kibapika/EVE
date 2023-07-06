@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Web from "./components/Web";
 import News from "./components/News";
 import Img from "./components/Img";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/images" element={<Img />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
